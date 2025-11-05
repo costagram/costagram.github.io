@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Costagram — Financial Datastream System</title>
+  <meta name="description" content="Costagram offers an integrated system for capturing and analyzing financial data streams.">
+  <style>
+    /* Minimal, compact CSS */
+    :root{--bg:#0b1020;--card:#131a33;--muted:#9aa3b2;--text:#e6ebff;--brand:#6ea8fe;--accent:#9d7bff}
+    *{box-sizing:border-box}html,body{height:100%}body{margin:0;font:14px/1.5 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial;color:var(--text);background:linear-gradient(180deg,#0a0f1d,#0f1b3d 65%) fixed}
+    a{color:var(--brand);text-decoration:none}a:hover{text-decoration:underline}
+    .wrap{max-width:980px;margin:0 auto;padding:28px}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .logo{display:flex;align-items:center;gap:10px;font-weight:700;letter-spacing:.2px}
+    .logo-mark{width:24px;height:24px;border-radius:6px;background:conic-gradient(from 210deg,var(--brand),var(--accent));box-shadow:0 0 0 2px #ffffff10 inset}
+    .btn{display:inline-block;padding:10px 14px;border-radius:10px;background:linear-gradient(90deg,var(--brand),var(--accent));color:#0b0f1a;font-weight:700}
+    .hero{margin:48px 0 28px;display:grid;gap:14px}
+    .h1{font-size:32px;line-height:1.2;margin:0}
+    .sub{color:var(--muted)}
+    .grid{display:grid;gap:14px}
+    @media(min-width:860px){.grid{grid-template-columns:1.2fr .8fr;align-items:start}}
+    .card{background:color-mix(in oklab,var(--card) 92%,#000 8%);border:1px solid #ffffff14;border-radius:16px;padding:18px;box-shadow:0 10px 30px #00000040}
+    .card h3{margin:0 0 8px 0;font-size:16px}
+    ul{margin:8px 0 0 18px;padding:0}
+    .kicker{display:inline-block;padding:4px 8px;border:1px solid #ffffff2a;border-radius:999px;color:var(--muted);font-size:12px}
+    .pill{display:inline-flex;gap:8px;flex-wrap:wrap}
+    .pill span{border:1px dashed #ffffff22;padding:6px 10px;border-radius:999px;color:#cdd6f7}
+    .directors{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:6px}
+    .dir{display:flex;gap:12px;align-items:center}
+    .dir svg{flex:0 0 56px}
+    .muted{color:var(--muted)}
+    .footer{margin:26px 0 8px;color:#93a0ba}
+    .tiny{font-size:12px;color:#7f8aa3}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <!-- Top nav -->
+    <header class="nav">
+      <div class="logo"><span class="logo-mark"></span><span>Costagram</span></div>
+      <div class="pill"><span>On-prem + Cloud</span><span>PIT DB</span><span>FactSet · Bloomberg · S&amp;P</span></div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+      <span class="kicker">Financial Datastream System</span>
+      <h1 class="h1">Integrated capture &amp; analysis of financial data streams</h1>
+      <p class="sub">Costagram delivers a production-ready pipeline for ingesting, normalizing, and serving time-sensitive market intelligence across your stack.</p>
+      <div>
+        <a class="btn" href="mailto:hello@costagram.example">Contact Us</a>
+        <span class="tiny"> &nbsp;• &nbsp;RFI/RFP welcome</span>
+      </div>
+    </section>
+
+    <!-- Main content -->
+    <section class="grid">
+      <!-- What we do -->
+      <article class="card">
+        <h3>1) Architecture</h3>
+        <ul>
+          <li>Hybrid integration of on-premises and cloud solutions.</li>
+        </ul>
+        <h3>2) Infrastructure Setup</h3>
+        <ul>
+          <li>Comprehensive hardware sourcing.</li>
+          <li>Comprehensive cloud setup.</li>
+        </ul>
+        <h3>3) Data Management</h3>
+        <ul>
+          <li>Collection of diverse data: fundamental metrics, sentiment signals, and value-chain insights.</li>
+          <li>Cutting-edge data crawling and acquisition tools.</li>
+          <li>Seamless integration with industry sources: FactSet, Bloomberg, S&amp;P Global.</li>
+          <li>Point-In-Time database for structured, instantly accessible data.</li>
+        </ul>
+        <h3>4) Database Service</h3>
+        <ul>
+          <li>End-to-end DBMS support for robust system management.</li>
+        </ul>
+      </article>
+
+      <!-- Directors + quick facts -->
+      <aside class="card">
+        <h3>Directors</h3>
+        <div class="directors">
+          <!-- Avatar: Kim Jaehwan -->
+          <div class="dir">
+            <!-- Simple inline SVG avatar with initials -->
+            <svg viewBox="0 0 64 64" width="56" height="56" aria-label="Avatar KJ">
+              <defs>
+                <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#6ea8fe"/>
+                  <stop offset="1" stop-color="#9d7bff"/>
+                </linearGradient>
+              </defs>
+              <circle cx="32" cy="32" r="30" fill="url(#g1)"/>
+              <text x="50%" y="54%" text-anchor="middle" font-size="22" font-weight="700" fill="#0b0f1a" font-family="system-ui,Segoe UI,Roboto">KJ</text>
+            </svg>
+            <div>
+              <div><strong>Kim Jaehwan</strong></div>
+              <div class="muted">Director</div>
+            </div>
+          </div>
+          <!-- Avatar: Jongu Shin -->
+          <div class="dir">
+            <svg viewBox="0 0 64 64" width="56" height="56" aria-label="Avatar JS">
+              <defs>
+                <linearGradient id="g2" x1="1" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#9d7bff"/>
+                  <stop offset="1" stop-color="#6ea8fe"/>
+                </linearGradient>
+              </defs>
+              <circle cx="32" cy="32" r="30" fill="url(#g2)"/>
+              <text x="50%" y="54%" text-anchor="middle" font-size="22" font-weight="700" fill="#0b0f1a" font-family="system-ui,Segoe UI,Roboto">JS</text>
+            </svg>
+            <div>
+              <div><strong>Jongu Shin</strong></div>
+              <div class="muted">Director</div>
+            </div>
+          </div>
+        </div>
+
+        <h3 style="margin-top:14px;">At a glance</h3>
+        <ul>
+          <li>Latency-aware ingestion &amp; PIT compliance</li>
+          <li>Schema-versioned, audit-ready pipelines</li>
+          <li>SLA-backed DBMS operations</li>
+        </ul>
+      </aside>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      © <span id="y"></span> Costagram • <a href="mailto:hello@costagram.example">hello@costagram.example</a>
+      <div class="tiny">This site uses no cookies and stores no personal data.</div>
+    </footer>
+  </div>
+
+  <!-- Tiny helper: current year -->
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>
